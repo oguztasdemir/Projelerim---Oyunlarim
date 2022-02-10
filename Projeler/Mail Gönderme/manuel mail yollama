@@ -1,0 +1,14 @@
+import smtplib
+from email.message import EmailMessage
+
+mesaj = EmailMessage()
+
+mesaj["Subject"] = "konu başlığı"
+mesaj["From"] = "yollanacak kişinin mail adresi"
+mesaj["To"] = "yollayan kişinin mail adresi"
+mesaj.set_content("mesaj içerik")
+
+with smtplib.SMTP_SSL("smtp.gmail.com",465) as smtp:
+
+    smtp.login("yollayan kişinin mail adresi", "şifre")
+    smtp.send_message(mesaj)

@@ -1,7 +1,11 @@
+#Burada örneğin dışarı çıkmak veya evde kalmak arasında seçim yapamadığınız sırada kullanabileceğiniz kodu hazırladım. 
+#home_act listesine dilediğiniz gibi evde yapabilceğiniz aktiviteleri yazabilirsiniz
+#out_act listesine dilediğiniz gibi dışarıda yapabileceğiniz aktiviteleri yazabilirsiniz.
+
 import random
 import time
 
-home_act = ["","",""]   
+home_act = ["","",""]  
 out_act = ["","",""]
 
 akt = random.randint(1,2)

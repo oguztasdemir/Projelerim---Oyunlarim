@@ -6,7 +6,7 @@ Gardrops hesabınıza girer. (Robot doğrulamayı 15 saniye içinde sizin geçme
 
 "kullanıcı.py" kısmında, "user" olarak belirttiğiniz kişinin takipçilerine erişim sağlar ve burada takip etmediğiniz kullanıcıları not defterine kaydetmeye başlar.
 
-Ne kadar kişiyi kontrol etmek istiyorsanız "while a < 3000:" adlı satırdaki 3000'i değiştirmeniz gerekmektedir.
+Ne kadar kişiyi kontrol etmek istiyorsanız "while a < 3000:" adlı satırdaki 3000'i değiştirmeniz gerekmektedir. (a'yı 3030'dan fazla yapmamanızı öneririm çünkü yapmanız bir işe yaramayacaktır. Bunun nedeni Gardrops aynı anda en fazla 3030 kullanıcıya erişmenize izin vermektedir. Kalan kullanıcılar gözükmemektedir.)
 
 Kullanıcıları "gardrops_tur.txt" içerisine kaydettikten sonra "gardrops_total.txt" ile karşılaştırma yapar. Bu karşılaştırma sonucunda "gardrops_tur.txt" içerisindeki kullanıcılardan "gardrops_total.txt" içerisinde bulunmayanları "gardrops_takip.txt" içerisine not eder. Bu not etme işlemi bittikten sonra "gardrops_takip.txt" içerisindeki tüm kullanıcıların profillerine sırasıyla giriş yaparak "Takip Et" butonu bulduklarına takip eder ve aynı zamanda profillerine erişilen kullanıcıları "gardrops_total.txt" dosyasının içine yükler.
 

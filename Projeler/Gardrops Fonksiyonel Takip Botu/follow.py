@@ -73,18 +73,23 @@ class Browser:
         dosya2 = open("Lists/Gardrops_follow_tur.txt", "r").readlines()
         try:
             for k in dosya2:
-                self.browser.get("https://www.gardrops.com/{}".format(k))
-                WebDriverWait(Chrome, 0, poll_frequency=0.5, ignored_exceptions=None)
-                time.sleep(1)
-                follow = self.browser.find_element_by_xpath("/html/body/div/div/div[2]/div[2]/div[2]/div[4]/div/div")
-                if follow.text != "Takibi Bırak":
-                    follow.click()
-                    ts_total += 1
-                    sayac_total += 1
-                else:
-                    sayac_total += 1
-                dosya.write(k)
-            print("Takip atma işlemi bitmiştir.")
+                try:
+                    self.browser.get("https://www.gardrops.com/{}".format(k))
+                    WebDriverWait(Chrome, 0, poll_frequency=0.5, ignored_exceptions=None)
+                    time.sleep(1)
+                    follow = self.browser.find_element_by_xpath("/html/body/div/div/div[2]/div[2]/div[2]/div[4]/div/div")
+                    if follow.text != "Takibi Bırak":
+                        follow.click()
+                        ts_total += 1
+                        sayac_total += 1
+                    else:
+                        sayac_total += 1
+                    dosya.write(k)            
+                except:
+                    ana = self.browser.find_element_by_xpath("/html/body/header/div[2]/div/div/div[7]/div[1]/a/div")
+                    if ana.text == "kampanya":
+                        pass
+            print("Takip atma işlemi bitmiştir.")        
             dosya.close()
             time.sleep(2)
             Browser.Toplam()
@@ -93,6 +98,7 @@ class Browser:
             dosya.close()
             time.sleep(1)
             Browser.Toplam()
+
 
     def Toplam(): #Python chat bildirimi
         global say

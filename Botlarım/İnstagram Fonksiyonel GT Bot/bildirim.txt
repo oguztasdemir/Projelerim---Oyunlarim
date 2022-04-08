@@ -1,0 +1,16 @@
+
+https://api.mynotifier.app
+
+
+        endpoint = 'https://api.mynotifier.app'
+        apikey = ' ' #apikeyinizi buraya yazın
+        message = " " #Buraya telefonunuza bildirimi hangi başlıkla yollamak istiyorsanız o metini yazın
+
+        description = " " #Bildirim içeriğini buraya yazınız
+
+        requests.post(endpoint,{
+            "apiKey": apikey,
+            "message": message,
+            "description": description,
+            "type": "success",
+        })

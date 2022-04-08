@@ -1,0 +1,24 @@
+
+Merhaba ben Oğuz Taşdemir. İlk defa bir bot kodlamaya çalıştım bu yüzden çok fazla eksiğim olabilir. Zaman geçtikçe bu eksiklerimi kapatmaya çalışacağım. Bu botu kodlama nedenim hem pratik yapmak hem de içerik sayfalarımı ve e-ticaret sayfamı geliştirmek adına geri takip yapma potansiyeli olan kullanıcıları bularak onlarla etkileşime geçmektir. Bu sayede ben başka bir işle meşgul olurken bu botu çalıştırdığım sürece bilgisayar kendi kendine diğer kullanıcılarla etkileşime geçecek ve zamandan kazanmış olacağım. Botun çalışma prensibini aşağıda açıkladım. İyi çalışmalar dilerim.
+
+Not: kullanıcı.py adlı kısımdaki yerleri kendinize göre düzenlemeyi unutmayın.
+Not2: İnstagram içerisindeki XPATH ve classlar sürekli olarak güncelleniyordur. Eğer bot hata verirse XPATH ve classları güncellemeyi unutmayın.
+
+
+#precode
+
+1- sanal bilgisayar açılır
+2- instagrama giriş yapar
+3- instagram hesabına giriş yapar
+4- profile giriş yapar
+5- eğer kullanıcının fotoğrafı varsa son paylaşılan fotoğrafa tıklar, fotoğrafı beğenenlerin listesini açar ve rastgele birinin profiline gider
+6- eğer kullanıcının fotoğrafı yoksa takipçi listesini açar ve rastgele bir takipçisine takip atar
+7- girilen kullanıcının takipçi - takip ettiği kişi sayısı karşılaştırması yapılır. 
+8- takip edilen kişi sayısı, takipçiden fazlaysa o kullanıcıya takip atılır ve takip edilen kişi sayısı (kod içerisinde a adlı değişken) 1 arttırılır 
+9- Eğer kullanıcıyı önceden takip ediyorsak bir şey yapmaz.
+10- Eğer takipçi sayısı, takip edilen kişi sayısından fazlaysa bir şey yapmaz.
+11- Hesap gizli mi değil mi karşılaştırması yapılır. Bunun nedeni profildeki takipçilere erişebilmektir.
+12- Eğer profil gizliyse googledeki 1 önceki sayfaya giriş yaparak başka bir kullanıcının profiline girilir ve 8. adımdan itibaren olay tekrarlanır.
+13- Eğer kullanıcının profili gizli değilse 8. adımdan itibaren tekrarlanır.
+14- Eğer bot başlatıldığından beri 100 kişiye takip atılmışsa işlem tamamlanmış demektir. Bot ve sanal bilgisayar kendisini kapatır.
+

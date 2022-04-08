@@ -1,0 +1,18 @@
+Merhaba ben Oğuz Taşdemir;
+
+Bu botumuzda BeautifulSoup ve Selenium modüllerini kullanarak hazırladım. Şuana kadar kodladığım Gardrops botları arasında en hızlı kullanıcı verisi çekebildiğimiz bot bu botumuzdur. Bu botumuzu daha rahat kullanabilelim diye botu 2 farklı kısma böldüm. 
+
+Bunlar search ve followdur. Search kısmı takip atabilceğimiz kullanıcıları bulup bunları listeye eklerken follow kısmı bu listedeki kullanıcılara takip atmaktadır.
+
+Aynı kullanıcıları 2 kez yazmamak için bazı yöntemlere başvurdum bunları kodumu inceleyerek görebilirsiniz.
+
+Botu çalıştırmanız için gerekli bilgilerin tamamı kullanıcı.py adlı kısımda bulunmaktadır. Hangi eşitliğin ne işe yaradığını yanında belirttim.
+
+Gmailde sınırsız mail atma hakkı vardır bu yüzden pek bir sorun olmuyor, yollatmak istediğiniz mesajı ve mail bilgilerinizi girmeniz yeterlidir fakat uygulama kısmına gelecek olursak aylık 15 bildirim yollama hakkı veriyor, sınırsız bildirim için aylık 7 dolar istemektedir.
+Bu 7 doları vermek yerine bildirim.txt kısmını açtım. Bunu açma nedenim o uygulama üzerinde 1den fazla hesap açabilirsiniz ve bu hesap bilgilerini rahatlık olsun diye bildirim.txt listesind sıralayabilirsiniz.
+Uygulamanın linkini bildirim.txt kısmına bırakıyorum, bu uygulamayı kullanarak hesap açabilirsiniz ve  telefonunuza indirebilirsiniz.
+
+Gmail ve Telefon bildirim bilgilerinizi de follow_py ve search.py kısmında son 2 fonksiyondan kendi bilgilerinize göre değiştirebilirsiniz.
+
+Botu çalıştırmak için kullanıcı ararken zorlanmamanız için sizlere kullanıcı.py kısmında bir kaç kullanıcının nickini liste halinde bırakıyorum, sizler de dilediğiniz gibi bu listeye eklemeler yapabilirsiniz.
+Bir sorunuz veya yardıma ihtiyacınız olursa Instagram üzerinden iletişime geçebilirsiniz. Instagram adresim: @oguz_tasdemir.
